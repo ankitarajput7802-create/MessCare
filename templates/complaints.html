@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Complaints - MessCare</title>
+</head>
+
+<body>
+
+    <h1>📋 Mess Complaints</h1>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Complaint Type</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+        {% for complaint in complaints %}
+<tr>
+    <td>{{ complaint[0] }}</td>
+    <td>{{ complaint[1] }}</td>
+    <td>{{ complaint[2] }}</td>
+    <td>{{ complaint[3] }}</td>
+ </tr>
+ {% endfor %}
+</table>
+
+</body>
+</html>
